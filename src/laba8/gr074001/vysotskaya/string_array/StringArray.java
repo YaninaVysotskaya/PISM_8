@@ -46,4 +46,10 @@ public class StringArray {
             System.out.println(i + ": " + this.stringList.get(i));
         }
     }
+
+    public void reverseAllStrings() {
+        for (int i = 0; i < this.stringList.size(); i++) {
+            this.stringList.set(i, new StringBuilder(this.stringList.get(i)).reverse().toString());
+        }
+    }
 }
