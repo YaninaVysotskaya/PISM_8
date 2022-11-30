@@ -11,10 +11,15 @@ public class Main {
         stringArray.add("third");
 
         stringArray.print();
+        stringArray.printCharStats();
+        stringArray.saveToXmlFile("testSave.xml");
 
-        System.out.println("\n");
-
+        System.out.println("_____________________");
         stringArray.reverseAllStrings();
+        stringArray.print();
+
+        System.out.println("_____________________");
+        stringArray.loadFromXmlFile("testSave.xml");
         stringArray.print();
     }
 }
