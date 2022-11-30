@@ -14,7 +14,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 public class StringArray {
-    private ArrayList<String> stringList;
+    protected ArrayList<String> stringList;
 
     public StringArray() {
         this.stringList = new ArrayList<>();
