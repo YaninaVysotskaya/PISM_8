@@ -10,6 +10,10 @@ public class Main {
         stringArray.add("second");
         stringArray.add("third");
 
+        System.out.println(stringArray.findSubstring("fir")); // true
+        System.out.println(stringArray.findSubstring("firt")); // false
+        System.out.println(stringArray.findSubstring("ond")); // true
+
         stringArray.print();
         stringArray.printCharStats();
         stringArray.saveToXmlFile("testSave.xml");

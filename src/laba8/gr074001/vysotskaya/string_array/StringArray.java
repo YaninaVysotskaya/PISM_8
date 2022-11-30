@@ -107,4 +107,12 @@ public class StringArray {
             System.out.println(character + ": " + chars.get(character));
         }
     }
+
+    public boolean findSubstring(String substring) {
+        for (String element : this.stringList) {
+            if (element.contains(substring))
+                return true;
+        }
+        return false;
+    }
 }
