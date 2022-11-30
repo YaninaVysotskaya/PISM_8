@@ -6,15 +6,21 @@ public class Main {
     public static void main(String[] args) {
         StringArray stringArray = new StringArray();
 
+        stringArray.loadFromTxtFile("strings.txt");
+        stringArray.print();
+        System.out.println("_____________________");
+
         stringArray.add("first");
         stringArray.add("second");
         stringArray.add("third");
+        stringArray.print();
 
+        System.out.println("_____________________");
         System.out.println(stringArray.findSubstring("fir")); // true
         System.out.println(stringArray.findSubstring("firt")); // false
         System.out.println(stringArray.findSubstring("ond")); // true
+        System.out.println("_____________________");
 
-        stringArray.print();
         stringArray.printCharStats();
         stringArray.saveToXmlFile("testSave.xml");
 

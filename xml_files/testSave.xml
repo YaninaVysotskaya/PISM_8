@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <root>
+    <element>txt_zero</element>
+    <element>txt_one</element>
+    <element>txt_two</element>
+    <element>txt_three</element>
     <element>first</element>
     <element>second</element>
     <element>third</element>

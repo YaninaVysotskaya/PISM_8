@@ -1,5 +1,7 @@
 package laba8.gr074001.vysotskaya.string_array;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.*;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -114,5 +116,19 @@ public class StringArray {
                 return true;
         }
         return false;
+    }
+
+    public void loadFromTxtFile(String filename) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("txt_files/" + filename));
+            String line = reader.readLine();
+            this.stringList.clear();
+            while (line != null) {
+                this.stringList.add(line);
+                line = reader.readLine();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
