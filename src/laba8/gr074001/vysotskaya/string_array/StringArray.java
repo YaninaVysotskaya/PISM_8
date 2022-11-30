@@ -131,4 +131,11 @@ public class StringArray {
             e.printStackTrace();
         }
     }
+
+    public boolean compareInnerObjects(int firstIndex, int secondIndex) {
+        if (firstIndex < 0 || firstIndex >= this.stringList.size()) return false;
+        if (secondIndex < 0 || secondIndex >= this.stringList.size()) return false;
+
+        return this.stringList.get(firstIndex).equals(this.stringList.get(secondIndex));
+    }
 }
