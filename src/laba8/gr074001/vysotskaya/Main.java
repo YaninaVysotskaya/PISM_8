@@ -6,11 +6,11 @@ public class Main {
     public static void main(String[] args) {
         StringArray stringArray = new StringArray();
 
-        stringArray.add("first");
-        stringArray.add("second");
-        stringArray.add("third");
-        stringArray.add("first");
+        stringArray.add("asd");
+        stringArray.add("asdf");
+        stringArray.add("asdfg");
+        stringArray.add("asdfgh");
 
-        System.out.println(stringArray.compareInnerObjects(0, 3));
+        stringArray.printStringsLength();
     }
 }

@@ -138,4 +138,16 @@ public class StringArray {
 
         return this.stringList.get(firstIndex).equals(this.stringList.get(secondIndex));
     }
+
+    public void printStringsLength() {
+        int max = 0;
+        for (String element : this.stringList)
+            if (element.length() > max)
+                max = element.length();
+
+        for (int i = max; i >= 0; i--)
+            for (String element : this.stringList)
+                if (element.length() == i)
+                    System.out.println(element + " (length : " + i + ")");
+    }
 }
